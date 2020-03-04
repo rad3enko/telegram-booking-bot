@@ -1,0 +1,33 @@
+# Telegram bot credentials
+telegram:
+  bot:
+    name: ${TELEGRAM_BOT_NAME}
+    token: ${TELEGRAM_BOT_TOKEN}
+
+# Database
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: ${DATABASE_PATH}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+# Bot menu
+BOT_MENU_START_TEXT: Привет! Жмякай на кнопки.
+BOT_MENU_BOOK_REPLY: Выбери дату.
+BOT_MENU_ABOUT_REPLY: Эта кнопка рассказывает о классном боте.
+BOT_MENU_CHOOSE_TIME_TEXT: Выбери время.
+BOT_MENU_APPROVE_BOOKING_TEXT: Подтвердить бронирование?
+BOT_MENU_BOOKING_APPROVED_TEXT: Бронирование подтверждено.
+BOT_MENU_BOOKING_CANCELED_TEXT: Бронирование отмененно.
+BOT_MENU_MY_BOOKING_TEXT: Мое бронирование.
+
+BOT_MENU_BOOK_BUTTON: Забронировать
+BOT_MENU_ABOUT_BUTTON: Информация
+BOT_MENU_APPROVE_BOOKING_BUTTON: Подтвердить
+BOT_MENU_BACK_TO_TIME_BUTTON: Вернуться
+BOT_MENU_ACTIVE_BOOKING_MY_BOOKING_BUTTON: Мое бронирование
+BOT_MENU_CANCEL_BOOKING_BUTTON: Отменить бронирование
+BOT_MENU_BACK_BUTTON: Назад
