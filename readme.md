@@ -10,11 +10,12 @@ Book services at time you want and be notified of upcoming book.
 
 ### Environment variables
 ##### Mandatory
-`TELEGRAM_BOT_NAME`
-`TELEGRAM_BOT_TOKEN`
-`DATABASE_URL` - jdbc db url (ex. `jdbc:postgresql://localhost:5432/my_db`)
-`DB_USERNAME`
-`DB_PASSWORD`
+
+*$TELEGRAM_BOT_NAME*    
+*$TELEGRAM_BOT_TOKEN*   
+*$DB_USERNAME*  
+*$DB_PASSWORD*  
+*$DATABASE_URL* - jdbc db url (ex. `jdbc:postgresql://localhost:5432/my_db`)    
 
 ##### Optional
 in further releases
