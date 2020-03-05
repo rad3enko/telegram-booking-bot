@@ -7,6 +7,7 @@ Book services at time you want and be notified of upcoming book.
 3. Set environment variables
 4. `mvn clean package`
 5. `java -jar *path-to-jar*.jar`
+6. message `/start` to your bot
 
 ### Environment variables
 ##### Mandatory
@@ -20,4 +21,19 @@ Book services at time you want and be notified of upcoming book.
 ##### Optional
 in further releases
 
+### Network exception solution
+While running bot on local servers located in areas where direct access to telegram servers is not allowed, there is a solution on how to run bot using Tor browser.
+
+Start Tor and modify `Launcher` class:
+```
+public static void main(String[] args) {
+    System.getProperties().put("proxySet", "true");
+    System.getProperties().put("socksProxyHost", "127.0.0.1");
+    System.getProperties().put("socksProxyPort", "9150");
+    
+    ApiContextInitializer.init();
+    SpringApplication.run(Launcher.class, args);
+}
+```
+    
 `Java` `telegrambots` `Spring Boot` `PostgreSQL`
