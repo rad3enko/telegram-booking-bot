@@ -3,6 +3,7 @@ Book services at time you want and be notified of upcoming book.
 
 ## Screenshot
 <img src="https://user-images.githubusercontent.com/10897930/79995216-a03a0b80-84bf-11ea-9b17-bafdce536309.jpg" width ="360" height="640">
+
 ## Instruction
 1. Get telegram bot `name` and `token` from @BotFather
 2. Create new postgresql database
